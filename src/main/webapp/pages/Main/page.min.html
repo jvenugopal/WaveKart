@@ -1,0 +1,539 @@
+<style id="Main.css">
+
+</style>
+<script id="Main.js">
+Application.$controller("MainPageController", ["$scope", '$location', function($scope, $location) {
+    "use strict";
+
+    console.log($scope.Variables);
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function() {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function() {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+</script>
+<script id="Main.variables.json">
+var _MainPage_Variables_ ={
+  "HotpicksImages" : {
+    "category" : "wm.Variable",
+    "isList" : true,
+    "_id" : "wm-HotpicksImages-staticImages-staticVariable1-wm.Variable-1451887451982",
+    "saveInPhonegap" : false,
+    "dataBinding" : [ ],
+    "name" : "HotpicksImages",
+    "owner" : "Page",
+    "type" : "string",
+    "dataSet" : [ {
+      "imageURL" : "resources/images/imagelists/smartphones_category.png",
+      "dataValue" : "Smartphones"
+    }, {
+      "imageURL" : "resources/images/imagelists/cameras_category.png",
+      "dataValue" : "Cameras"
+    }, {
+      "imageURL" : "resources/images/imagelists/laptops_category.png",
+      "dataValue" : "Laptops"
+    } ]
+  },
+  "cameras_list" : {
+    "isList" : false,
+    "firstRow" : 0,
+    "inFlightBehavior" : "executeLast",
+    "package" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+    "ignoreCase" : false,
+    "type" : "Product",
+    "startUpdate" : true,
+    "propertiesMap" : {
+      "primaryFields" : [ "id" ],
+      "columns" : [ {
+        "hibernateType" : "integer",
+        "isRelated" : false,
+        "isPrimaryKey" : true,
+        "length" : 255,
+        "generator" : "identity",
+        "columnName" : "ID",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "integer",
+        "fieldName" : "id",
+        "fullyQualifiedType" : "integer"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "IMG_URL",
+        "defaultValue" : null,
+        "notNull" : false,
+        "type" : "string",
+        "fieldName" : "imgUrl",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "CATEGORY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "category",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "double",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PRICE",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "double",
+        "fieldName" : "price",
+        "fullyQualifiedType" : "double"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "DESCRIPTION",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "description",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "NAME",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "name",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "boolean",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "AVAILABILITY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "boolean",
+        "fieldName" : "availability",
+        "fullyQualifiedType" : "boolean"
+      } ],
+      "tableType" : "TABLE",
+      "fullyQualifiedName" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+      "entityName" : "Product"
+    },
+    "matchMode" : "start",
+    "transformationRequired" : false,
+    "maxResults" : 3,
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "operation" : "read",
+    "category" : "wm.LiveVariable",
+    "autoUpdate" : true,
+    "_id" : "wm-cameras_list-wm.LiveVariable-1449055344533",
+    "dataBinding" : [ {
+      "target" : "category",
+      "value" : "Cameras",
+      "type" : "string"
+    } ],
+    "saveInPhonegap" : false,
+    "filterFields" : { },
+    "tableName" : "PRODUCT",
+    "name" : "cameras_list",
+    "designMaxResults" : 3,
+    "owner" : "Page",
+    "tableType" : "TABLE",
+    "liveSource" : "eshopping"
+  },
+  "laptops_list" : {
+    "isList" : false,
+    "firstRow" : 0,
+    "inFlightBehavior" : "executeLast",
+    "package" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+    "ignoreCase" : false,
+    "type" : "Product",
+    "startUpdate" : true,
+    "propertiesMap" : {
+      "primaryFields" : [ "id" ],
+      "columns" : [ {
+        "hibernateType" : "integer",
+        "isRelated" : false,
+        "isPrimaryKey" : true,
+        "length" : 255,
+        "generator" : "identity",
+        "columnName" : "ID",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "integer",
+        "fieldName" : "id",
+        "fullyQualifiedType" : "integer"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "IMG_URL",
+        "defaultValue" : null,
+        "notNull" : false,
+        "type" : "string",
+        "fieldName" : "imgUrl",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "CATEGORY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "category",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "double",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PRICE",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "double",
+        "fieldName" : "price",
+        "fullyQualifiedType" : "double"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "DESCRIPTION",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "description",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "NAME",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "name",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "boolean",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "AVAILABILITY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "boolean",
+        "fieldName" : "availability",
+        "fullyQualifiedType" : "boolean"
+      } ],
+      "tableType" : "TABLE",
+      "fullyQualifiedName" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+      "entityName" : "Product"
+    },
+    "matchMode" : "start",
+    "transformationRequired" : false,
+    "maxResults" : 3,
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "operation" : "read",
+    "category" : "wm.LiveVariable",
+    "autoUpdate" : true,
+    "_id" : "wm-laptops_list-wm.LiveVariable-1449055287096",
+    "dataBinding" : [ {
+      "target" : "category",
+      "value" : "Laptops",
+      "type" : "string"
+    } ],
+    "saveInPhonegap" : false,
+    "filterFields" : { },
+    "tableName" : "PRODUCT",
+    "name" : "laptops_list",
+    "designMaxResults" : 3,
+    "owner" : "Page",
+    "tableType" : "TABLE",
+    "liveSource" : "eshopping"
+  },
+  "DealsImages" : {
+    "category" : "wm.Variable",
+    "isList" : true,
+    "_id" : "wm-Deals-staticImages2-wm.Variable-1451892228670",
+    "saveInPhonegap" : false,
+    "dataBinding" : [ ],
+    "name" : "DealsImages",
+    "owner" : "Page",
+    "type" : "string",
+    "dataSet" : [ {
+      "imageURL" : "resources/images/imagelists/accessories__category.png",
+      "dataValue" : "Accessories"
+    }, {
+      "imageURL" : "resources/images/imagelists/peripherals_category.png",
+      "dataValue" : "Peripherals"
+    } ]
+  },
+  "smartphones_list" : {
+    "firstRow" : 0,
+    "isList" : false,
+    "bindCount" : 0,
+    "package" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+    "startUpdate" : true,
+    "type" : "Product",
+    "ignoreCase" : false,
+    "propertiesMap" : {
+      "primaryFields" : [ "id" ],
+      "columns" : [ {
+        "hibernateType" : "integer",
+        "isRelated" : false,
+        "isPrimaryKey" : true,
+        "length" : 255,
+        "generator" : "identity",
+        "columnName" : "ID",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "integer",
+        "fieldName" : "id",
+        "fullyQualifiedType" : "integer"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "IMG_URL",
+        "defaultValue" : null,
+        "notNull" : false,
+        "type" : "string",
+        "fieldName" : "imgUrl",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "CATEGORY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "category",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "double",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PRICE",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "double",
+        "fieldName" : "price",
+        "fullyQualifiedType" : "double"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "DESCRIPTION",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "description",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "NAME",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "name",
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "boolean",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "AVAILABILITY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "boolean",
+        "fieldName" : "availability",
+        "fullyQualifiedType" : "boolean"
+      } ],
+      "tableType" : "TABLE",
+      "fullyQualifiedName" : "com.wavemaker.sampleapps.wavekart.eshopping.Product",
+      "entityName" : "Product"
+    },
+    "transformationRequired" : false,
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "operation" : "read",
+    "saveInPhonegap" : false,
+    "_id" : "wm-smartphones_list-wm.LiveVariable-1449051748246",
+    "tableName" : "PRODUCT",
+    "designMaxResults" : 3,
+    "name" : "smartphones_list",
+    "liveSource" : "eshopping",
+    "inFlightBehavior" : "executeLast",
+    "maxResults" : 3,
+    "matchMode" : "start",
+    "category" : "wm.LiveVariable",
+    "autoUpdate" : true,
+    "dataBinding" : [ {
+      "target" : "category",
+      "value" : "Smartphones",
+      "type" : "string"
+    } ],
+    "filterFields" : { },
+    "owner" : "Page",
+    "tableType" : "TABLE"
+  }
+}
+</script>
+<script id="Main.html" type="text/ng-template">
+<wm-page name="page1" data-ng-controller="MainPageController" pagetitle="Main">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-top-nav name="top_nav1" content="topnav"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-container name="container1" horizontalalign="left">
+                <wm-label name="DealsofDay" caption="Deals of the Day" fontsize="20" margintop="15" marginleft="15"></wm-label>
+            </wm-container>
+            <wm-carousel height="170" name="carousel1" horizontalalign="center" paddingleft="10" paddingright="10" animationinterval="3">
+                <wm-carousel-content name="carousel_content1" horizontalalign="center" paddingleft="15" paddingright="15">
+                    <wm-picture width="70%" name="picture1" pictureaspect="Both" shape="rounded" picturesource="resources/images/imagelists/cameras_banner.png"></wm-picture>
+                </wm-carousel-content>
+                <wm-carousel-content name="carousel_content2" horizontalalign="center" paddingleft="15" paddingright="15">
+                    <wm-picture width="80%" name="picture2" pictureaspect="Both" shape="rounded" picturesource="resources/images/imagelists/phones_banner.png"></wm-picture>
+                </wm-carousel-content>
+                <wm-carousel-content name="carousel_content3" horizontalalign="center" paddingleft="15" paddingright="15">
+                    <wm-picture width="80%" name="picture3" pictureaspect="Both" shape="rounded" picturesource="resources/images/imagelists/peripherals_banner.png"></wm-picture>
+                </wm-carousel-content>
+            </wm-carousel>
+            <wm-container horizontalalign="left" name="container3">
+                <wm-label caption="Hot Picks" fontsize="20" name="HotPicks" marginleft="15" margintop="15"></wm-label>
+            </wm-container>
+            <wm-layoutgrid name="layoutgrid1" columns="3" paddingleft="15" borderstyle="none">
+                <wm-gridrow name="gridrow4_1">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn9" paddingright="5" paddingtop="5" paddingbottom="5">
+                        <wm-livelist listclass="media-list" dataset="bind:Variables.HotpicksImages.dataSet" name="categorylist1" itemsperrow="3" on-click="ProductsbyCategory;goToPage_ProductsList" width="100%">
+                            <wm-listtemplate layout="media" name="listtemplate5" width="100%">
+                                <wm-container class="media-left media-top" name="container11_1" width="100%">
+                                    <wm-picture picturesource="bind:Variables.HotpicksImages.dataSet[$i].imageURL" name="Picture" class="media-object" width="130%" paddingleft="10" margintop="10" marginright="10" marginbottom="10" hint="bind:Variables.HotpicksImages.dataSet[$i].dataValue"></wm-picture>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+                <wm-gridrow name="gridrow5">
+                    <wm-gridcolumn colwidth="4" name="gridcolumn13">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist1" dataset="bind:Variables.smartphones_list.dataSet" width="100%" borderstyle="solid" on-click="goToPage_Products" paddingleft="5">
+                            <wm-listtemplate layout="media" name="listtemplate1">
+                                <wm-container class="media-left" name="container5" horizontalalign="center">
+                                    <wm-picture class="media-object picture" name="picture8" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.smartphones_list.dataSet.data[$i].imgUrl" height="8em" paddingtop="10"
+                                    paddingleft="10"></wm-picture>
+                                </wm-container>
+                                <wm-container class="media-body" data-template-ctr="true" name="container6" horizontalalign="left" paddingtop="10" paddingbottom="10" paddingleft="10" paddingright="10">
+                                    <wm-label width="100%" caption="bind:Variables.smartphones_list.dataSet.data[$i].name" name="label5" fontsize="1.2" fontunit="em"></wm-label>
+                                    <wm-label width="100%" caption="bind:Variables.smartphones_list.dataSet.price | toCurrency: '$'" name="label6" fontsize="1.5" fontunit="em"></wm-label>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn colwidth="4" name="gridcolumn14">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist2" dataset="bind:Variables.cameras_list.dataSet" on-click="goToPage_Products" paddingleft="5">
+                            <wm-listtemplate layout="media" name="listtemplate2">
+                                <wm-container class="media-left" name="container16">
+                                    <wm-picture class="media-object picture" name="picture12" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.cameras_list.dataSet.data[$i].imgUrl" height="8em" paddingtop="10"
+                                    paddingleft="10"></wm-picture>
+                                </wm-container>
+                                <wm-container class="media-body" data-template-ctr="true" name="container17" paddingtop="10" paddingleft="10" paddingright="10" paddingbottom="10">
+                                    <wm-label width="100%" caption="bind:Variables.cameras_list.dataSet.name" name="label17" fontsize="1.2" fontunit="em"></wm-label>
+                                    <wm-label width="100%" caption="bind:Variables.cameras_list.dataSet.price | toCurrency: '$'" name="label15" fontsize="1.5" fontunit="em"></wm-label>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn colwidth="4" name="gridcolumn15">
+                        <wm-livelist listclass="media-list" itemclass="media" name="livelist3" dataset="bind:Variables.laptops_list.dataSet" on-click="goToPage_Products" paddingleft="5">
+                            <wm-listtemplate layout="media" name="listtemplate3">
+                                <wm-container class="media-left" name="container10">
+                                    <wm-picture class="media-object picture" name="picture10" height="8em" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.laptops_list.dataSet.data[$i].imgUrl" paddingtop="10"
+                                    paddingleft="10"></wm-picture>
+                                </wm-container>
+                                <wm-container class="media-body" data-template-ctr="true" name="container11" paddingtop="10" paddingleft="10" paddingright="10" paddingbottom="10">
+                                    <wm-label width="100%" caption="bind:Variables.laptops_list.dataSet.name" name="label10" fontsize="1.2" fontunit="em"></wm-label>
+                                    <wm-label width="100%" caption="bind:Variables.laptops_list.dataSet.price | toCurrency: '$'" name="label8" fontsize="1.5" fontunit="em"></wm-label>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+            <wm-container horizontalalign="left" name="container9">
+                <wm-label caption="Deals" fontsize="20" name="Deals" marginleft="15" margintop="15"></wm-label>
+            </wm-container>
+            <wm-layoutgrid name="layoutgrid3" paddingleft="15">
+                <wm-gridrow name="gridrow4">
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                        <wm-livelist listclass="media-list" dataset="bind:Variables.DealsImages.dataSet" name="categirylist2" itemsperrow="2" on-click="ProductsbyCategory;goToPage_ProductsList" paddingright="10" paddingleft="10" paddingtop="10" paddingbottom="10">
+                            <wm-listtemplate layout="media" name="listtemplate5_1" width="100%">
+                                <wm-container class="media-left media-top" name="container11_2" width="130%">
+                                    <wm-picture picturesource="bind:Variables.DealsImages.dataSet[$i].imageURL" name="Picture" class="media-object" width="128%" paddingleft="10" margintop="10" marginright="10" marginbottom="10" hint="bind:Variables.DealsImages.dataSet[$i].dataValue"></wm-picture>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer name="footer1" content="footer"></wm-footer>
+</wm-page>
+</script>
