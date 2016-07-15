@@ -1,10 +1,10 @@
 {
   "categorynames" : {
-    "category" : "wm.Variable",
     "isList" : true,
-    "_id" : "wm-categorynames-wm.Variable-1451477574410",
-    "saveInPhonegap" : false,
+    "category" : "wm.Variable",
     "dataBinding" : [ ],
+    "saveInPhonegap" : false,
+    "_id" : "wm-categorynames-wm.Variable-1451477574410",
     "name" : "categorynames",
     "owner" : "Page",
     "type" : "string",

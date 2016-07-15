@@ -1,1 +1,22 @@
-{"enforceSecurity":true,"rememberMeConfig":{"enabled":true,"tokenValiditySeconds":1296000},"useSSL":false,"sslPort":"443","dataSourceType":"DATABASE","login":{"type":"DIALOG","pageName":"Login","sessionTimeout":{"type":"DIALOG","pageName":"","timeoutValue":30}}}
+{
+  "enforceSecurity" : true,
+  "rememberMeConfig" : {
+    "enabled" : true,
+    "tokenValiditySeconds" : 1296000
+  },
+  "sslConfig" : {
+    "sslPort" : 443,
+    "useSSL" : false,
+    "excludedUrls" : null
+  },
+  "authProviders" : [ "DATABASE" ],
+  "login" : {
+    "type" : "DIALOG",
+    "pageName" : "Login",
+    "sessionTimeout" : {
+      "type" : "DIALOG",
+      "pageName" : "",
+      "timeoutValue" : 30
+    }
+  }
+}
