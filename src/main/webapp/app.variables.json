@@ -1787,7 +1787,7 @@
     "onSuccess" : "goToPage_Main",
     "inFlightBehavior" : "executeLast",
     "transformationRequired" : false,
-    "redirectTo" : "index.html",
+    "redirectTo" : "Main",
     "useDefaultSuccessHandler" : true
   },
   "Product_obj" : {

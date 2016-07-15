@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="DemoJavaService" class="com.wavemaker.sampleapps.wavekart.demojavaservice.DemoJavaService" type="JavaService" springFile="DemoJavaService.spring.xml">
+    <operation name="inputMyPojo">
+        <parameter name="mypojo" typeRef="com.wavemaker.sampleapps.wavekart.demojavaservice.DemoJavaService.MyPojo" isList="false"/>
+        <return typeRef="java.lang.String" isList="false"/>
+    </operation>
+    <operation name="sampleJavaOperation">
+        <parameter name="name" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="java.lang.String" isList="false"/>
+    </operation>
+    <operation name="sayHello">
+        <parameter name="name" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="java.lang.String" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.demojavaservice.DemoJavaService.MyPojo" name="MyPojo" supportsQuickData="false">
+            <element name="age" typeRef="int" isList="false" allowNull="false"/>
+            <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
+        </dataobject>
+    </dataobjects>
+</service>

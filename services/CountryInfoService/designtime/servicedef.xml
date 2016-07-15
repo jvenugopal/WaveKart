@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="CountryInfoService" type="SoapService" springFile="CountryInfoService.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndName" name="ArrayOftCountryCodeAndName">
+            <element name="tCountryCodeAndName" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryCodeAndName" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountryNameResponse" name="CountryNameResponse">
+            <element name="countryNameResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfContinentsByCodeResponse" name="ListOfContinentsByCodeResponse">
+            <element name="listOfContinentsByCodeResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftContinent" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountryCurrencyResponse" name="CountryCurrencyResponse">
+            <element name="countryCurrencyResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCurrency" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfCurrenciesByCodeResponse" name="ListOfCurrenciesByCodeResponse">
+            <element name="listOfCurrenciesByCodeResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCurrency" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryInfo" name="ArrayOftCountryInfo">
+            <element name="tCountryInfo" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryInfo" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndNameGroupedByContinent" name="ArrayOftCountryCodeAndNameGroupedByContinent">
+            <element name="tCountryCodeAndNameGroupedByContinent" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryCodeAndNameGroupedByContinent" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfCountryNamesGroupedByContinentResponse" name="ListOfCountryNamesGroupedByContinentResponse">
+            <element name="listOfCountryNamesGroupedByContinentResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndNameGroupedByContinent" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftContinent" name="ArrayOftContinent">
+            <element name="tContinent" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TContinent" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryCodeAndName" name="TCountryCodeAndName">
+            <element name="sisoCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sName" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfCountryNamesByCodeResponse" name="ListOfCountryNamesByCodeResponse">
+            <element name="listOfCountryNamesByCodeResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndName" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.FullCountryInfoResponse" name="FullCountryInfoResponse">
+            <element name="fullCountryInfoResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryInfo" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftLanguage" name="ArrayOftLanguage">
+            <element name="tLanguage" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TLanguage" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfContinentsByNameResponse" name="ListOfContinentsByNameResponse">
+            <element name="listOfContinentsByNameResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftContinent" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountryFlagResponse" name="CountryFlagResponse">
+            <element name="countryFlagResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.LanguageNameResponse" name="LanguageNameResponse">
+            <element name="languageNameResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountryIntPhoneCodeResponse" name="CountryIntPhoneCodeResponse">
+            <element name="countryIntPhoneCodeResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.FullCountryInfoAllCountriesResponse" name="FullCountryInfoAllCountriesResponse">
+            <element name="fullCountryInfoAllCountriesResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryInfo" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfLanguagesByNameResponse" name="ListOfLanguagesByNameResponse">
+            <element name="listOfLanguagesByNameResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftLanguage" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfLanguagesByCodeResponse" name="ListOfLanguagesByCodeResponse">
+            <element name="listOfLanguagesByCodeResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftLanguage" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryCodeAndNameGroupedByContinent" name="TCountryCodeAndNameGroupedByContinent">
+            <element name="continent" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TContinent" allowNull="true"/>
+            <element name="countryCodeAndNames" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndName" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountriesUsingCurrencyResponse" name="CountriesUsingCurrencyResponse">
+            <element name="countriesUsingCurrencyResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndName" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TLanguage" name="TLanguage">
+            <element name="sisoCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sName" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfCurrenciesByNameResponse" name="ListOfCurrenciesByNameResponse">
+            <element name="listOfCurrenciesByNameResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCurrency" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.LanguageISOCodeResponse" name="LanguageISOCodeResponse">
+            <element name="languageISOCodeResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TContinent" name="TContinent">
+            <element name="sCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sName" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCountryInfo" name="TCountryInfo">
+            <element name="sisoCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="languages" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftLanguage" allowNull="true"/>
+            <element name="sCapitalCity" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sPhoneCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sContinentCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sCurrencyISOCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sName" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sCountryFlag" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CountryISOCodeResponse" name="CountryISOCodeResponse">
+            <element name="countryISOCodeResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCurrency" name="TCurrency">
+            <element name="sisoCode" typeRef="java.lang.String" allowNull="true"/>
+            <element name="sName" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ListOfCountryNamesByNameResponse" name="ListOfCountryNamesByNameResponse">
+            <element name="listOfCountryNamesByNameResult" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCountryCodeAndName" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CapitalCityResponse" name="CapitalCityResponse">
+            <element name="capitalCityResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.ArrayOftCurrency" name="ArrayOftCurrency">
+            <element name="tCurrency" typeRef="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.TCurrency" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.wavemaker.sampleapps.wavekart.services.countryinfoservice.CurrencyNameResponse" name="CurrencyNameResponse">
+            <element name="currencyNameResult" typeRef="java.lang.String" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

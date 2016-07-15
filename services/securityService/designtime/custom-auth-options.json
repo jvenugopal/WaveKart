@@ -1,0 +1,3 @@
+{
+  "fqCustomAuthenticationManagerClassName" : "com.colruyt.securiy.AuthenticationManager"
+}

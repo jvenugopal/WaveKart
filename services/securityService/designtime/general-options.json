@@ -1,15 +1,12 @@
 {
   "enforceSecurity" : true,
-  "rememberMeConfig" : {
-    "enabled" : true,
-    "tokenValiditySeconds" : 1296000
-  },
+  "rememberMeConfig" : null,
   "sslConfig" : {
     "sslPort" : 443,
     "useSSL" : false,
     "excludedUrls" : null
   },
-  "authProviders" : [ "DATABASE" ],
+  "authProviders" : [ "CUSTOM" ],
   "login" : {
     "type" : "DIALOG",
     "pageName" : "Login",
